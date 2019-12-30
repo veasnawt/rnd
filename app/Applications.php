@@ -11,5 +11,6 @@ class Applications extends Model
         'application_name',
         'description',
         'icon',
+        'demo_file',
     ];
 }

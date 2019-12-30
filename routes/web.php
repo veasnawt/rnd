@@ -20,3 +20,4 @@ Route::get('/user', function(){
 });
 
 Route::resource('applications', 'ApplicationsController');
+Route::resource('projects', 'ProjectsController');

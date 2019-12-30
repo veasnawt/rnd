@@ -18,6 +18,7 @@ class CreateApplicationsTable extends Migration
             $table->string('application_name');
             $table->string('description');
             $table->string('icon');
+            $table->string('demo_file');
             $table->timestamps();
         });
     }

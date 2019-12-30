@@ -24,7 +24,7 @@
         @foreach($data as $row)
             <tr>
                 <td><img src="{{ URL::to('/') }}/icons/{{ $row->icon }}" class="img-thumbnail" width="100"/></td>
-                <td><h3>{{ $row->application_name }}</h3></td>
+                <td><h3 class="text-uppercase">{{ $row->application_name }}</h3></td>
                 <td>{{ $row->description }}</td>
                 <td>
 

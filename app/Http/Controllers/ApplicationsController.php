@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Applications;
+use DataTables;
 
 class ApplicationsController extends Controller
 {
@@ -23,7 +25,7 @@ class ApplicationsController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

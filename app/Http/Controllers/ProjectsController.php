@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Projects;
 
 class ProjectsController extends Controller
 {
@@ -13,7 +14,9 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        //
+        $data = Projects::latest()->paginate(5);
+        return view('projects', compact('data'))
+                ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**

@@ -15,7 +15,9 @@ class ApplicationsController extends Controller
      */
     public function index()
     {
-        //
+        $data = Applications::latest()->paginate(5);
+        return view('index', compact('data'))
+                ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -25,7 +27,7 @@ class ApplicationsController extends Controller
      */
     public function create()
     {
-        
+
     }
 
     /**
